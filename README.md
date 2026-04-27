@@ -1,6 +1,6 @@
-# KISS FFT — Arduino & ESP32 Library
+# KISS FFT Arduino & ESP32 Library
 
-> **K**eep **I**t **S**imple, **S**tupid FFT — a lightweight Fast Fourier Transform for Arduino and ESP32.
+> **K**eep **I**t **S**imple, **S**tupid FFT, a lightweight Fast Fourier Transform for Arduino and ESP32.
 
 [![Arduino Library](https://img.shields.io/badge/Arduino-Library-blue?logo=arduino)](https://github.com/meerzafarnoohani/KISS_FFT)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -10,7 +10,7 @@
 
 ## What is KISS FFT?
 
-KISS FFT converts a time-domain signal (a series of samples from a microphone, ADC, accelerometer, etc.) into the **frequency domain** — revealing which frequencies are present and how strong each one is.
+KISS FFT converts a time-domain signal (a series of samples from a microphone, ADC, accelerometer, etc.) into the **frequency domain**, revealing which frequencies are present and how strong each one is.
 
 **Practical uses on ESP32 / Arduino:**
 - 🎵 Audio spectrum visualization
@@ -92,7 +92,7 @@ Apply **before** `compute()` to reduce spectral leakage.
 
 | Method | Description |
 |--------|-------------|
-| `applyWindowHann()` | Hann window — best general-purpose choice |
+| `applyWindowHann()` | Hann window, best general-purpose choice |
 | `applyWindowHamming()` | Hamming window |
 | `applyWindowRect()` | No windowing (rectangular) |
 
@@ -122,7 +122,7 @@ Apply **before** `compute()` to reduce spectral leakage.
 
 | Example | Description |
 |---------|-------------|
-| `BasicFFT` | Synthetic 440 Hz + 1 kHz signal — verify the library works without hardware |
+| `BasicFFT` | Synthetic 440 Hz + 1 kHz signal, verify the library works without hardware |
 | `MicrophoneFFT` | Real-time FFT from an I2S MEMS microphone (INMP441 / SPH0645) on ESP32 |
 
 ---
@@ -136,7 +136,7 @@ Apply **before** `compute()` to reduce spectral leakage.
 | 1024     | ~24 KB       |
 | 2048     | ~48 KB       |
 
-ESP32 has ~320 KB of RAM — 1024 is a comfortable default.  
+ESP32 has ~320 KB of RAM. 1024 is a comfortable default.  
 For AVR (Uno/Nano) use 64 or 128 max due to the 2 KB RAM limit.
 
 ---
@@ -183,5 +183,5 @@ Please open an issue first for major changes so we can discuss the approach.
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for full text.  
+MIT License. See [LICENSE](LICENSE) for full text.  
 The underlying KISS FFT engine retains its original BSD 3-Clause license (credited in source).
